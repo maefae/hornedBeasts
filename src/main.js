@@ -1,26 +1,18 @@
 import React from 'react';
-import HornedBeast from './hornedBeasts.js';
-import beast1 from './img/dragon.jpg';
-import beast2 from './img/pans.jpg';
+import HornedBeast from './hornedBeast.js';
+import data from "./data.json";
+import Beast from './hornedBeast.js';
 
 
 class Main extends React.Component {
   render() {
+    let beastsDisplay = data.map(beast => (
+      <HornedBeast title={beast.title} src={beast.image_url} description={beast.description} alt={beast.description} key={beast._id}/>
+    ))
     return (
       <>
-        <div id="mainDiv">
-          <HornedBeast
-            title="Fierce Dragon"
-            src={beast1}
-            description="A deadly dragon."
-            alt="Dragon"
-            />
-          <HornedBeast
-            title="a goat man"
-            src={beast2}
-            description="The goat from pans labyrinth"
-            alt="una fauna"
-            />
+        <div>
+          {beastsDisplay}
         </div>
       </>
     );
