@@ -1,7 +1,6 @@
 import React from 'react';
 import HornedBeast from './hornedBeast.js';
 import data from "./data.json";
-// import Beast from './hornedBeast.js';
 
 
 class Main extends React.Component {
@@ -14,6 +13,16 @@ class Main extends React.Component {
         <div>
           {beastsDisplay}
         </div>
+
+        <Container>
+                    <Row lg={4}>
+                        {data.map((hBeast) => {
+                            return (<Col classname="mb-3"><HornedBeast src={hBeast.image_url} description={hBeast.description}
+                                title={hBeast.title} setShowModalTrue={this.props.setShowModalTrue} key={hBeast._id} id={hBeast._id} /></Col>)
+                        })}
+                    </Row>
+        </Container> //17 to here
+
       </>
     );
   }
