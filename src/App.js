@@ -39,7 +39,6 @@ class App extends React.Component {
       <Header />
       <Main setShowModalTrue={this.setShowModalTrue} setShowModalFalse={this.setShowModalFalse}/>
         <SelectedBeast showModal={this.state.showModal} setShowModalFalse={this.setShowModalFalse} selectedBeast={this.state.selectedBeast} />
-        //41 42
       <Footer />
      </>
     );
