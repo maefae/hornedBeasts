@@ -1,3 +1,45 @@
+#1 Display Images
+Estimate of time needed to complete: 3 hours
+
+Start time: 6:00 PM
+
+Finish time: 9:00 PM
+
+Actual time needed to complete: 3 hours
+
+#2 Allow Voting
+Estimate of time needed to complete: 3 hours
+
+Start time: 6:00
+
+Finish time: 9:00
+
+Actual time needed to complete: 1 hours
+
+#3 Bootstrap
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+
+#4 Display Modal
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete:
+
+Megan Seibert-Hughes
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
