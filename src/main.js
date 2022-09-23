@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import BeastForm from './beastForm.js';
 
 class Main extends React.Component {
   render() {
@@ -13,10 +14,11 @@ class Main extends React.Component {
     // ))
     return (
       <>
+      <BeastForm formFunction={this.props.appHandleForm}/>
         <Container>
                     <Row lg={4}>
-                        {data.map((hBeast) => {
-                            return (<Col classname="mb-3"><HornedBeast src={hBeast.image_url} description={hBeast.description}
+                        {this.props.beastArray.map((hBeast, i) => {
+                            return (<Col key={i} className="mb-3"><HornedBeast src={hBeast.image_url} description={hBeast.description}
                                 title={hBeast.title} setShowModalTrue={this.props.setShowModalTrue} key={hBeast._id} id={hBeast._id} /></Col>)
                         })}
                     </Row>
