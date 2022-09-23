@@ -37,7 +37,7 @@ class App extends React.Component {
     const selectedHorns = parseInt(event.target.value);
     let filteredBeasts 
     if (selectedHorns) {
-      filteredBeasts = data.filter(beasts => beasts.horn === selectedHorns)
+      filteredBeasts = data.filter(beast => beast.horns === selectedHorns)
     } else {
       filteredBeasts = data
     }
